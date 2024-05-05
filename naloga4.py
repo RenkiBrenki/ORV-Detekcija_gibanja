@@ -116,7 +116,6 @@ def izracunaj_povratno_projekcijo(slika, histogram):
 
 
 def camshift(slika, sablone, lokacije_oken, iteracije, napaka):
-
     hsv = cv.cvtColor(slika, cv.COLOR_BGR2HSV)
     nova_lokacija_oken = []
     for sablona, lokacija_okna in zip(sablone, lokacije_oken):
